@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%% Tema %%%%%%%%%%%%%%%%%%%%%%%%
+\mode<presentation> {
+\usetheme{Madrid}
+\usecolortheme{dove}
+
+}
+
+%%%%%%%%%%%%%%%% Pacotes %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage[brazil]{babel}
+\usepackage{color}	
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}	
+\usepackage{txfonts}
+
+% To define colors 
+\definecolor{ferngreen}{rgb}{0.31, 0.47, 0.26}
+
+% To hide bottom navigation symbols in beamer
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{times}
+\usepackage{graphicx,epsfig,psfrag,float,color}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+
+\usefonttheme[onlymath]{serif}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathrsfs}
+
+\usepackage{lmodern} 
+
+\usepackage{scalefnt}
+\usepackage{ragged2e} % Justifica o texto no slide
+% Testando citação 
+\setbeamertemplate{frametitle continuation}[from second]
+
+% Para citações
+\usepackage{url}
+\usepackage{hyperref}
+% ----------
+
+%%%%%%%%%%%%%%%% Logos %%%%%%%%%%%%%%%%%%%%%%%%
+
+% Logo no corpo do texto
+\logo{%
+  \makebox[0.95\paperwidth]{%
+   %\includegraphics[width=1.6cm,keepaspectratio]{Figures/marca.png}
+    \hfill%
+    \includegraphics[width=1.3cm,keepaspectratio]{Figures/marca.png}%
+  }%
+\vspace{200pt}}
+
+%Para inserir o logo no título
+\newcommand{\logotitle}{\setbeamertemplate{logo}{
+  \makebox[0.95\paperwidth]{%
+    \includegraphics[width=1.3cm,keepaspectratio]{Figures/marca.png}%
+    \hfill%
+    \includegraphics[width=1.3cm,keepaspectratio]{Figures/marca.png}%
+  }%
+\vspace{220pt}
+}}
+
+% To not put logos
+\newcommand{\nologo}{\setbeamertemplate{logo}{}}
+
+
+%%%%%%%%%%%%%% Notas de rodapé %%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\insertshorttitle}{{\fontsize{8pt}{8}\selectfont { IFBA }}}
+\renewcommand{\insertshortauthor}{{\fontsize{8pt}{8}\selectfont {\today }}}
+\date{}
+ 
+
+\setbeamertemplate{footline}{
+   \begin{beamercolorbox}[ht=2ex,leftskip=2mm,rightskip=2mm]{}
+   % ht: altura
+    \textcolor{ferngreen}{\hrule height 5pt}
+    \vspace{0.3cm}
+    \insertshortauthor \hfill \insertshorttitle  \hfill  {\fontsize{8pt}{8}\selectfont {\insertframenumber}}
+   \end{beamercolorbox}
+   \vspace*{0.3cm}
+} 
