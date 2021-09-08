@@ -44,63 +44,46 @@ Arnaldo Correia, IFBA  arnadocorreia@outlook.com
 
 \begin{frame}{\fontsize{20pt}{20}\selectfont \textbf{Objetivo(s)}}
 
+O objetivo deste curso é apresentar uma visão geral do Framework django.
+
+\end{frame}
+
+
+%------------------------------------------------------
+\begin{frame}{\fontsize{20pt}{20}\selectfont \textbf{Instalando o framework Django}}
+
+  Executar o comando pip install django.
+  Verificando se o django foi instalado com sucesso.
+  import django
+  print(django.get\_version())
+  
+
+\end{frame}
+
+
+%------------------------------------------------------
+\begin{frame}{\fontsize{20pt}{20}\selectfont \textbf{Criando o projeto.}}
+  Para criar o projeto no django usa-se o seguinte comando.
+
+  django-admin startproject  mysite
+
+\end{frame}
+
+
+%------------------------------------------------------
+\begin{frame}{\fontsize{20pt}{20}\selectfont \textbf{Criando a aplicação.}}
+  Para criar a aplicação usa-se o seguinte comando.
+
+  python manage.py startapp aplicacao
 
 
 \end{frame}
 
 
 %------------------------------------------------------
-\begin{frame}{\fontsize{20pt}{20}\selectfont \textbf{Metodologia}}
+\begin{frame}[allowframebreaks] {\fontsize{20pt}{20}\selectfont \textbf{Comando para rodar o servidor de aplicação.}}
 
-
-
-\end{frame}
-
-
-%------------------------------------------------------
-\begin{frame}{\fontsize{20pt}{20}\selectfont \textbf{Resultados}}
-
-\begin{itemize}
-    \item Resumos expandidos
-    \begin{itemize}
-        \item Devem apresentar resultados esperados ou obtidos se for o caso;
-    \end{itemize}
-    \item Artigos completos
-    \begin{itemize}
-        \item Devem apresentar resultados obtidos.
-    \end{itemize}
-\end{itemize}
-
-\end{frame}
-
-
-%------------------------------------------------------
-\begin{frame}{\fontsize{20pt}{20}\selectfont \textbf{Conclusões e trabalhos futuros}}
-
-
-
-\end{frame}
-
-
-%------------------------------------------------------
-\begin{frame}[allowframebreaks] {\fontsize{20pt}{20}\selectfont \textbf{Normas para apresentação de trabalhos}}
-
-\begin{itemize}
-{\fontsize{11pt}{11}\selectfont
-    \item Este documento apresenta a estrutura base da apresentação oral;
-    \item O trabalho deverá ser apresentado obrigatoriamente por um dos autores;
-    \item O autor terá até 10 minutos para apresentação oral;
-    \item O apresentador deverá comparecer com pelo menos 20 minutos de antecedência na sala de sua apresentação;
-    \item Após a apresentação haverá 5 minutos para que o autor possa responder perguntas ou esclarecer dúvidas dos participantes;
-    
-    \framebreak
-        
-    \item Em todas as salas será disponibilizado data-show e computador para apresentação;
-    \item Cada sala terá, no mínimo, um chair da seção;
-    \item O certificado de apresentação de trabalho será enviado até 60 dias do término do congresso por e-mail;
-    \item A sequência e os horários de apresentação dos trabalhos foi disponibilizada no site do congresso;
-    \item Caso o trabalho não seja apresentado, não será emitido certificado e não constará  nos anais do evento.}
-\end{itemize}
+  python manage.py runserver
 
 \end{frame}
 
